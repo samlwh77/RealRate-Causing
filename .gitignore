@@ -11,5 +11,5 @@ output.txt
 /__pycache__
 
 
-
+*.pyc
 

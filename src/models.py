@@ -2,7 +2,7 @@
 """Model Examples."""
 
 from sympy import symbols
-
+from src import utils
 
 def example():
     """model example"""
@@ -31,7 +31,7 @@ def example():
         }
 
     # simulate data
-    import utils
+    
     simulation_dat = {
         "xmean_true": [3, 2],                   # mean of exogeneous data
         "sigx_theo": 1,                         # true scalar error variance of xvars
@@ -86,7 +86,7 @@ def example2():
         }
 
     # simulate data
-    import utils
+    # import utils
     simulation_dat = {
         "xmean_true": [3],
         "sigx_theo": 1,
@@ -134,7 +134,7 @@ def example3():
         }
 
     # simulate data
-    import utils
+    # import utils
     simulation_dat = {
         "xmean_true": [3],
         "sigx_theo": 1,

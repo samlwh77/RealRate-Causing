@@ -14,7 +14,7 @@ from reportlab.lib.units import cm
 from reportlab.platypus import PageBreak, Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
 from reportlab.platypus.flowables import KeepTogether
 
-import utils
+from src import utils
 
 # reportlab setting
 #   10: standard text fontsize

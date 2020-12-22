@@ -10,7 +10,7 @@ from copy import deepcopy
 from numpy import allclose, array_equal, diag, eye, linspace, zeros
 from numpy.linalg import cholesky, inv, LinAlgError
 
-import utils
+from src import utils
 
 
 def sse_hess_num(mx, my, model_dat):

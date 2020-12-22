@@ -4,7 +4,7 @@
 from numpy import amax, array_equal, allclose, isnan, logical_and
 from pandas import DataFrame
 
-import utils
+from causing import utils
 
 
 def color_scheme(value, base):

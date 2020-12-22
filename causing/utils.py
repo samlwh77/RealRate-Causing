@@ -22,7 +22,7 @@ from scipy.optimize import minimize
 from sympy import diff, Heaviside, lambdify
 import torch
 
-import svg
+from causing import svg
 
 # set numpy random seed
 seed(1002)
@@ -781,10 +781,13 @@ def digital(mat):
 
 def print_output(model_dat, estimate_dat, indiv_dat):
     """print theoretical and estimated values to output file"""
-    
+    # create directory if not exist
+    import os
+    if not os.path.exists(model_dat["dir_path"]):
+        os.makedirs(model_dat["dir_path"])
     # print output file
     stdout = sys.stdout
-    fha = open(model_dat["dir_path"] + "output.txt", 'w')
+    fha = open(model_dat["dir_path"] + "/output.txt", 'w')
     sys.stdout = fha
 
     # model variables

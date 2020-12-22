@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 """causing - causal interpretation using graphs."""
 
-import models
-import estimate
-import indiv
-import graph
-import report
-import utils
+from causing import models
+from causing import estimate
+from causing import indiv
+from causing import graph
+from causing import report
+from causing import utils
 
 
 def causing(model_dat):
@@ -36,11 +36,11 @@ def causing(model_dat):
     
     return analyze_dat
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
 
-    model_dat = models.example()
+#     model_dat = models.example()
 
-    analyze_dat = causing(model_dat)
+#     analyze_dat = causing(model_dat)
 
 # =============================================================================
 #     # profiling
